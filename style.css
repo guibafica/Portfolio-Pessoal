@@ -137,16 +137,12 @@
 /* FINAL -> Home */
 
 
-/* INICIO -> Sobre */
+/* INICIO -> Estilos Similares */
   section {
     padding: 100px 0;
   }
 
-  .about {
-    font-family: 'Poppins', sans-serif; 
-  }
-
-  .about .title {
+  section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -156,7 +152,7 @@
     font-family: 'Ubuntu', sans-serif; 
   }
 
-  .about .title::before {
+  section .title::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -167,8 +163,7 @@
     transform: translateX(-50%);
   }
 
-  .about .title::after {
-    content: "Quem sou eu";
+  section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -178,8 +173,19 @@
     background: #fff;
     transform: translateX(-50%);
   }
+/* FINAL -> Estilos Similares */
 
-  .about .about-content {
+
+/* INICIO -> Sobre */
+  .about, .services {
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  .about .title::after {
+    content: "Quem sou eu";
+  }
+
+  .about .about-content, .services .serv-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -234,6 +240,54 @@
     color: #088b43;
   }
 /* FINAL -> Sobre */
+
+
+/* INICIO -> Servicos */
+  .services {
+    color: #fff;
+    background: #111;
+  }
+
+  .services .title::before {
+    background: #fff;
+  }
+
+  .services .title::after {
+    background: #111;
+    content: "O que eu faço";
+  }
+
+  .services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .services .serv-content .card:hover {
+    background: #088b43;
+    transform: scale(1.1);
+  }
+
+  .services .serv-content .card i {
+    font-size: 50px;
+    color: #088b43;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .services .serv-content .card:hover i {
+    color: #111;
+  }
+
+  .services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+/* FINAL -> Servicos */
 
 
 /* INICIO -> Responsividade */
@@ -323,6 +377,10 @@
     flex: 100%;
   }
 
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -341,6 +399,10 @@
   .home .home-content a {
     font-size: 20px;
   }
+
+  .services .serv-content .card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -353,3 +415,6 @@
   }
 }
 /* FINAL -> Responsividade */
+
+
+/* 088b43 */
