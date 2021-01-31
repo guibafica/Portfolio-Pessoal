@@ -9,11 +9,13 @@
 
 
 /* INICIO -> Estilos Similares */
-.about, .services, .skills {
+.about, .services, .skills, .teams {
   font-family: 'Poppins', sans-serif; 
 }
 
-.about .about-content, .services .serv-content, .skills .skills-content {
+.about .about-content, 
+.services .serv-content, 
+.skills .skills-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -244,16 +246,16 @@ section .title::after {
 
 
 /* INICIO -> Servicos */
-  .services {
+  .services, .teams {
     color: #fff;
     background: #111;
   }
 
-  .services .title::before {
+  .services .title::before, .teams .title::before {
     background: #fff;
   }
 
-  .services .title::after {
+  .services .title::after, .teams .title::after {
     background: #111;
     content: "O que eu faço";
   }
@@ -383,6 +385,80 @@ section .title::after {
     width: 70%;
   }
 /* FINAL -> Habilidades */
+
+
+/* INICIO -> Teams */
+  .teams .title::after {
+    content: "Quem comigo";
+  }
+
+  .teams .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .teams .carousel .card:hover {
+    background: #088b43;
+  }
+
+  .teams .carousel .card:hover img {
+    border: 5px solid #222;
+  }
+
+  .teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .teams .carousel .card:hover .box {
+    transform: scale(1.05);
+  }
+
+  .teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
+
+  .teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #088b43;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #088b43!important;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+  }
+
+  .owl-dot.active, .owl-dot:hover {
+    background: #088b43!important;
+  }
+/* FINAL -> Teams */
 
 
 /* INICIO -> Responsividade */
