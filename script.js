@@ -29,6 +29,39 @@ $(document).ready(function() {
     $('.menu-btn i').toggleClass("active");
   });
 
+  // Script para animação de digitação
+  var typed = new Typed(".typing", {
+    strings: [
+      "Desenvolvedor", 
+      "Freelancer", 
+      "Baterista", 
+      "Programador de Site", 
+      "Programador de Aplicativo",
+      "Engenheiro da Computação",
+      "Representante de Curso"
+    ],
+
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+
+  var typed = new Typed(".typing-2", {
+    strings: [
+      "Desenvolvedor", 
+      "Freelancer", 
+      "Baterista", 
+      "Programador de Site", 
+      "Programador de Aplicativo",
+      "Engenheiro da Computação",
+      "Representante de Curso"
+    ],
+
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+
   // Script do Carousel
   $('.carousel').owlCarousel({
     margin: 20,
