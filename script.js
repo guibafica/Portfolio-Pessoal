@@ -32,7 +32,8 @@ $(document).ready(function() {
   // Script para animação de digitação
   var typed = new Typed(".typing", {
     strings: [
-      "Desenvolvedor", 
+      "Desenvolvedor",
+      "Fullstack", 
       "Freelancer", 
       "Baterista", 
       "Programador de Site", 
@@ -49,6 +50,7 @@ $(document).ready(function() {
   var typed = new Typed(".typing-2", {
     strings: [
       "Desenvolvedor", 
+      "Fullstack", 
       "Freelancer", 
       "Baterista", 
       "Programador de Site", 
