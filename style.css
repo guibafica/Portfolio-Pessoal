@@ -9,13 +9,14 @@
 
 
 /* INICIO -> Estilos Similares */
-.about, .services, .skills, .teams {
+.about, .services, .skills, .teams, .contact {
   font-family: 'Poppins', sans-serif; 
 }
 
 .about .about-content, 
 .services .serv-content, 
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -389,7 +390,7 @@ section .title::after {
 
 /* INICIO -> Teams */
   .teams .title::after {
-    content: "Quem comigo";
+    content: "O que já fiz";
   }
 
   .teams .carousel .card {
@@ -459,6 +460,123 @@ section .title::after {
     background: #088b43!important;
   }
 /* FINAL -> Teams */
+
+
+/* INICIO -> Contact */
+  .contact .title::after {
+    content: "Mensagem";
+  }
+
+  .contact .contact-content .column {
+    width: calc(50% - 30px);
+  }
+
+  .contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .contact .contact-content .left p {
+    text-align: justify;
+  }
+
+  .contact .contact-content .left .icons {
+    margin: 10px 0;
+  }
+
+  .contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+  }
+
+  .contact .contact-content .row .info {
+    margin-left: 30px;
+  }
+
+  .contact .contact-content .row i {
+    font-size: 25px;
+    color: #088b43;
+  }
+
+  .contact .contact-content .info .head {
+    font-weight: 500;
+  }
+
+  .contact .contact-content .info .sub-title {
+    color: #333;
+  }
+
+  .contact .right form .fields {
+    display: flex;
+  }
+
+  .contact .right form .field,
+  .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contact .right form .textarea {
+    height: 140px;
+    width: 100%;
+  }
+
+  .contact .right form .name {
+    margin-right: 10px;
+  }
+
+  .contact .right form .email {
+    margin-left: 10px;
+  }
+
+  .contact .right form .field input,
+  .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  .contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+  }
+
+  .contact .right form .field input:focus,
+  .contact .right form .textarea textarea:focus {
+    border: 1px solid #088b43;
+  }
+
+  .contact .right form .button {
+    height: 47px;
+    width: 100%;
+  }
+
+  .contact .right form .button button {
+    height: 100%;
+    width: 200px;
+    border: 2px solid #088b43;
+    background-color: #088b43;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .contact .right form .button button:hover {
+    background: none;
+    color: #088b43;
+  }
+/* FINAL -> Contact */
 
 
 /* INICIO -> Responsividade */
@@ -553,7 +671,8 @@ section .title::after {
     margin-bottom: 20px;
   }
 
-  .skills .skills-content .column {
+  .skills .skills-content .column,
+  .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
   }

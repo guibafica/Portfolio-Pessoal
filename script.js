@@ -1,3 +1,8 @@
+console.log('');
+console.log('Made with 💜 by:');
+console.log('Guilherme Bafica 🤘');
+console.log('');
+
 $(document).ready(function() {
   $(window).scroll(function() {
     if(this.scrollY > 20) {
@@ -17,6 +22,7 @@ $(document).ready(function() {
   $('.carousel').owlCarousel({
     margin: 20,
     loop: true,
+    autoPlay: true,
     autoplayTimeOut: 2000,
     autoplayHoverPause: true,
     responsive: {
