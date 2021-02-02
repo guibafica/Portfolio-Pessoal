@@ -9,7 +9,7 @@
 
 
 /* INICIO -> Estilos Similares */
-.about, .services, .skills, .teams, .contact {
+.about, .services, .skills, .teams, .contact, .footer {
   font-family: 'Poppins', sans-serif; 
 }
 
@@ -577,6 +577,24 @@ section .title::after {
     color: #088b43;
   }
 /* FINAL -> Contact */
+
+
+/* INICIO -> Footer */
+  footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+  }
+
+  footer span a {
+    color: #088b43;
+    text-decoration: none;
+  }
+
+  footer span a:hover {
+    text-decoration: underline;
+  }
+/* FINAL -> Footer */
 
 
 /* INICIO -> Responsividade */
