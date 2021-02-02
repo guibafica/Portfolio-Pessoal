@@ -10,6 +10,17 @@ $(document).ready(function() {
     } else {
       $('.navbar').removeClass("sticky");
     }
+
+    if(this.scrollY > 500) {
+      $('.scroll-up-btn').addClass("show");
+    } else {
+      $('.scroll-up-btn').removeClass("show");
+    }
+  });
+
+  // Scrip para o slide-up
+  $('.scroll-up-btn').click(function() {
+    $('html').animate({ scrollTop: 0 });
   });
 
   // Script para exibir o navbar/menu
